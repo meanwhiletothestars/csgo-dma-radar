@@ -15,7 +15,9 @@ Easy csgo radar created with python
 1. download binaries from https://github.com/ufrisk/pcileech
 2. start dma test with
 ```
-sudo ./pcileech -device fpga probe ``` (1-8% loss is normal)
+sudo ./pcileech -device fpga probe
+```
+(1-8% loss is normal)
 
 (1-8% loss is normal)
 4. if test isn't working there is couple of things u can do
