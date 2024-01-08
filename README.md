@@ -19,6 +19,6 @@ sudo ./pcileech -device fpga probe
 ```
 (1-8% loss is normal)
 
-4. if test isn't working there is couple of things u can do
+3. if test isn't working there is couple of things u can do
    a) try another windows version(downgrade for 21h2 for example)
    b) try to buy other dma firmware 
