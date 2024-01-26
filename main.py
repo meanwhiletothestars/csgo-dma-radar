@@ -148,6 +148,7 @@ def main():
                 entity_pos_y = struct.unpack("<f", cs2.memory.read(entity + m_vOldOrigin, 4, memprocfs.FLAG_NOCACHE))[0]
                 player_view_angle_y = 1
                 x, y = entity_pos_x, entity_pos_y
+                pos_x, pos_y, scale = map_data['pos_x'], map_data['pos_y'], map_data['scale']
                 image_x, image_y = world_to_minimap(x, y, pos_x, pos_y, scale, map_image, screen, player_pos_x, player_pos_y, zoom_scale, player_view_angle_y)
  
                 if entity_health > 0:
