@@ -3,9 +3,9 @@
 	"material"	"overviews/de_mirage"	// texture file
 	"pos_x"		"-3230"	// X coordinate,
 	"pos_y"		"1713"	// Y coordinate,
-	"scale"		"2.50" 	// and used scale used when taking the screenshot
+	"scale"		"5.00" 	// and used scale used when taking the screenshot
 	"rotate"	"0"	// map was rotated by 90 degress in image editor
-	"zoom"		"3.0"	// optimal zoom factor if map is shown in full size
+	"zoom"		"0"	// optimal zoom factor if map is shown in full size
 
 	// loading screen icons and positions
 	"CTSpawn_x"	"0.28"
