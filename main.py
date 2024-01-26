@@ -16,7 +16,7 @@ dragging = False # флаг, указывающий, перетаскивает�
 
 def get_map_name():
     with open(os.path.join(f'map.txt'), 'r') as f:
-        maptxt = f.read()
+        maptxt = 'de_mirage'
     return maptxt
 
 def load_map_data(map_name):
