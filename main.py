@@ -64,8 +64,8 @@ def rotate_point(center, point, angle):
     return temp_point
  
 def world_to_minimap(x, y, pos_x, pos_y, scale, map_image, screen, player_x, player_y, zoom_scale, rotation_angle):
-    image_x = int((x - pos_x) * screen.get_width() / (map_image.get_width() * scale * zoom_scale))
-    image_y = int((pos_y - y) * screen.get_height() / (map_image.get_height() * scale * zoom_scale))
+    image_x = int((x + pos_x) * screen.get_width() / (map_image.get_width() * scale * zoom_scale))
+    image_y = int((pos_y + y) * screen.get_height() / (map_image.get_height() * scale * zoom_scale))
 
     center_x, center_y = screen.get_width() // 2, screen.get_height() // 2
     image_x, image_y = image_x - center_x, image_y - center_y
