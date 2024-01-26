@@ -94,6 +94,10 @@ def initialize_pygame(map_image):
  
  
 def main():
+    dwEntityList = 0x17CE6A0
+    dwLocalPlayerPawn = 0x16D4F48
+    m_iHealth = 0x32C
+    m_vOldOrigin = 0x1224
     vmm = memprocfs.Vmm(['-device', 'fpga', '-disable-python', '-disable-symbols', '-disable-symbolserver', '-disable-yara', '-disable-yara-builtin', '-debug-pte-quality-threshold', '64'])
     cs2 = vmm.process('cs2.exe')
     client = cs2.module('client.dll')
@@ -117,10 +121,6 @@ def main():
         except:
             pass
  
-    dwEntityList = 0x17CE6A0
-    dwLocalPlayerPawn = 0x16D4F48
-    m_iHealth = 0x32C
-    m_vOldOrigin = 0x1224
     
     map_name = get_map_name()
     map_data = load_map_data(map_name)
