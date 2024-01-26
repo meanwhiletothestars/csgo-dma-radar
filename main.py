@@ -149,7 +149,7 @@ def main():
                 player_view_angle_y = 1
                 x, y = entity_pos_x, entity_pos_y
                 pos_x, pos_y, scale = map_data['pos_x'], map_data['pos_y'], map_data['scale']
-                image_x, image_y = world_to_minimap(x, y, pos_x, pos_y, scale, map_image, screen, player_pos_x, player_pos_y, zoom_scale, player_view_angle_y)
+                image_x, image_y = world_to_minimap(x, y, pos_x, pos_y, scale, map_image, screen, entity_pos_x, entity_pos_y, zoom_scale, player_view_angle_y)
  
                 if entity_health > 0:
                     pygame.draw.circle(screen, (255, 0, 0), (image_x, image_y), 5)
